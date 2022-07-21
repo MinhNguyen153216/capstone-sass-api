@@ -3,9 +3,11 @@
 
 .carousel {
   .owl-carousel {
-    .container {
+    .item-carousel {
+        height: 530px;
         position: relative;
-      .carousel-item {
+      .container {
+        // position: relative;
         .item-left {
           img {
             display: block;
@@ -32,14 +34,21 @@
           }
         }
       }
-    }
-    .owl-nav{
-
-    }
-    .owl-dots{
-        button{
-            background-color: red;
+      .img-bg-footer{
+        img{
+            height: 393px;
+            position:absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
         }
+      }
+    }
+
+    .owl-dots {
+      button {
+        background-color: red;
+      }
     }
   }
 }

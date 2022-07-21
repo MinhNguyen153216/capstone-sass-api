@@ -56,8 +56,8 @@
   <body>
     <section class="carousel">
       <div class="owl-carousel owl-theme">
-        <div class="container">
-          <div class="carousel-item d-flex align-items-center">
+        <div class="item-carousel">
+          <div class="container d-flex align-items-center">
             <div class="item-left w-75">
               <img src="./img/image 4.png" alt="" />
             </div>
@@ -67,9 +67,14 @@
               <span class="text-center ">Buy now</span>
             </div>
           </div>
+
+          <div class="img-bg-footer">
+            <img src="./img/image 6.png" alt="">
+          </div>
         </div>
-        <div class="container">
-          <div class="carousel-item d-flex align-items-center">
+        
+        <div class="item-carousel">
+          <div class="container d-flex align-items-center">
             <div class="item-left w-75">
               <img src="./img/image 4.png" alt="" />
             </div>
@@ -78,6 +83,10 @@
               <p>Product description ...</p>
               <span class="text-center ">Buy now</span>
             </div>
+          </div>
+
+          <div class="img-bg-footer">
+            <img src="./img/image 6.png" alt="">
           </div>
         </div>
       </div>
@@ -124,8 +133,8 @@
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-          loop:true,
-          nav:true,
+          loop: true,
+          nav: true,
           items: 1,
         });
       });
