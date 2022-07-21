@@ -4,3 +4,40 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+.carousel .owl-carousel .container {
+  position: relative;
+}
+.carousel .owl-carousel .container .carousel-item .item-left img {
+  display: block;
+  height: 392px;
+  width: auto;
+}
+.carousel .owl-carousel .container .carousel-item .item-right h1 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.carousel .owl-carousel .container .carousel-item .item-right p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.carousel .owl-carousel .container .carousel-item .item-right span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  background-color: #f8b653;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.carousel .owl-carousel .owl-dots button {
+  background-color: red;
+}

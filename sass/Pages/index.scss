@@ -1,3 +1,45 @@
 @import "../Base/base";
 @import "../Themes/variables";
 
+.carousel {
+  .owl-carousel {
+    .container {
+        position: relative;
+      .carousel-item {
+        .item-left {
+          img {
+            display: block;
+            height: 392px;
+            width: auto;
+          }
+        }
+        .item-right {
+          h1 {
+            @include text-config($fw-light, 40px, 48px, #000000);
+          }
+          p {
+            @include text-config($fw-light, 20px, 24px, #000000);
+          }
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            height: 50px;
+            width: 150px;
+            background-color: #f8b653;
+            @include text-config($fw-light, 20px, 24px, #ffffff);
+          }
+        }
+      }
+    }
+    .owl-nav{
+
+    }
+    .owl-dots{
+        button{
+            background-color: red;
+        }
+    }
+  }
+}

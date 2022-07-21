@@ -5,6 +5,16 @@
   font-family: "Inter", sans-serif;
 }
 
+.carousel .owl-carousel .container .carousel-item .item-left img {
+  display: block;
+  height: 392px;
+  width: auto;
+}
+.carousel .owl-carousel .container .carousel-item .item-right h1 {
+  font-size: 40px;
+  line-height: 48.41px;
+  font-weight: 300;
+}
 * {
   padding: 0;
   margin: 0;
