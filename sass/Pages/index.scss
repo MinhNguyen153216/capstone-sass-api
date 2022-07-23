@@ -2,10 +2,10 @@
 @import "../Themes/variables";
 
 .carousel {
+  position: relative;
   .owl-carousel {
     .item-carousel {
-        height: 530px;
-        position: relative;
+      height: 530px;
       .container {
         // position: relative;
         .item-left {
@@ -34,21 +34,36 @@
           }
         }
       }
-      .img-bg-footer{
-        img{
-            height: 393px;
-            position:absolute;
-            z-index: -1;
-            bottom: 0;
-            left: 0;
-        }
+    }
+    .owl-nav {
+      margin: 0;
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
       }
     }
-
     .owl-dots {
       button {
-        background-color: red;
+        background-color: blue;
       }
+    }
+  }
+  .img-bg-footer {
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      // height: 393px;
+      z-index: -1;
     }
   }
 }

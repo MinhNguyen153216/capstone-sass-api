@@ -5,16 +5,53 @@
   font-family: "Inter", sans-serif;
 }
 
-.carousel .owl-carousel .container .carousel-item .item-left img {
+.carousel {
+  position: relative;
+}
+.carousel .owl-carousel .item-carousel {
+  height: 530px;
+}
+.carousel .owl-carousel .item-carousel .container .item-left img {
   display: block;
   height: 392px;
   width: auto;
 }
-.carousel .owl-carousel .container .carousel-item .item-right h1 {
-  font-size: 40px;
-  line-height: 48.41px;
+.carousel .owl-carousel .item-carousel .container .item-right h1 {
   font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
 }
+.carousel .owl-carousel .item-carousel .container .item-right p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.carousel .owl-carousel .item-carousel .container .item-right span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  background-color: #f8b653;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.carousel .owl-carousel .owl-dots button {
+  background-color: blue;
+}
+.carousel .img-bg-footer img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 393px;
+  z-index: -1;
+}
+
 * {
   padding: 0;
   margin: 0;
