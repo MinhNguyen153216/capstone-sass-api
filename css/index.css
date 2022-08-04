@@ -6,6 +6,7 @@
 }
 
 .carousel {
+  margin-top: 50px;
   position: relative;
 }
 .carousel .owl-carousel .item-carousel {
@@ -54,10 +55,19 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 }
-.carousel .owl-carousel .owl-dots button {
-  background-color: blue;
+.carousel .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.carousel .owl-carousel .owl-dots span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: white;
 }
 .carousel .img-bg-footer img {
   position: absolute;
@@ -65,4 +75,14 @@
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+.product {
+  margin-top: 46px;
+}
+.product .container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
 }

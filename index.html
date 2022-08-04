@@ -20,8 +20,8 @@
     <!-- Font Awesome 6 -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -64,11 +64,10 @@
             <div class="item-right w-25">
               <h1>Product name</h1>
               <p>Product description ...</p>
-              <span class="text-center ">Buy now</span>
+              <span class="text-center">Buy now</span>
             </div>
           </div>
         </div>
-        
         <div class="item-carousel">
           <div class="container d-flex align-items-center">
             <div class="item-left w-75">
@@ -77,18 +76,39 @@
             <div class="item-right w-25">
               <h1>Product name</h1>
               <p>Product description ...</p>
-              <span class="text-center ">Buy now</span>
+              <span class="text-center">Buy now</span>
+            </div>
+          </div>
+        </div>
+        <div class="item-carousel">
+          <div class="container d-flex align-items-center">
+            <div class="item-left w-75">
+              <img src="./img/image 4.png" alt="" />
+            </div>
+            <div class="item-right w-25">
+              <h1>Product name</h1>
+              <p>Product description ...</p>
+              <span class="text-center">Buy now</span>
             </div>
           </div>
         </div>
       </div>
       <div class="img-bg-footer">
-        <img src="./img/image 6.png" alt="">
+        <img src="./img/image 6.png" alt="" />
       </div>
-      
     </section>
 
-    <!-- <section class="feature"></section> -->
+    <section class="product">
+      <div class="container">
+        <h2 class="text-center">- Product Feature -</h2>
+        
+        <div class="row" id="product-row">
+          <div class="col-4 item"></div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 500px"></div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -132,6 +152,10 @@
           loop: true,
           nav: true,
           items: 1,
+          navText: [
+            "<i class='fa-regular fa-triangle'></i>",
+            "<i class='fa-regular fa-triangle'></i>",
+          ],
         });
       });
     </script>

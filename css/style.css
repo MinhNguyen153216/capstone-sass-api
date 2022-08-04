@@ -6,6 +6,7 @@
 }
 
 .carousel {
+  margin-top: 50px;
   position: relative;
 }
 .carousel .owl-carousel .item-carousel {
@@ -41,6 +42,27 @@
   line-height: 24px;
   color: #ffffff;
 }
+.carousel .owl-carousel .owl-nav {
+  margin: 0;
+}
+.carousel .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.carousel .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.carousel .owl-carousel .owl-dots {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(-50%);
+}
 .carousel .owl-carousel .owl-dots button {
   background-color: blue;
 }
@@ -48,10 +70,19 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 393px;
+  width: 100%;
   z-index: -1;
 }
 
+.product {
+  margin-top: 46px;
+}
+.product .container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
 * {
   padding: 0;
   margin: 0;
