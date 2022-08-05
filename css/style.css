@@ -5,6 +5,66 @@
   font-family: "Inter", sans-serif;
 }
 
+.header .container .top-header {
+  background: #000000;
+  height: 50px;
+  align-items: center;
+}
+.header .container .top-header .header-left {
+  margin-left: 24px;
+}
+.header .container .top-header .header-right a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.header .container .top-header .header-right .cart {
+  margin-right: 10px;
+  font-size: 30px;
+  line-height: 36px;
+}
+.header .container .top-header .header-right .login {
+  margin-right: 10px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .top-header .header-right .register-menu {
+  margin-right: 20px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .menu-header {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .container .menu-header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 25px;
+}
+.header .container .menu-header a:hover {
+  color: #000000;
+  opacity: 1;
+}
+.header .container .menu-header a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  background: #000000;
+  border: 1px solid #000000;
+}
+
 .carousel {
   margin-top: 50px;
   position: relative;
@@ -55,16 +115,19 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 }
 .carousel .owl-carousel .owl-dots {
   position: absolute;
-  top: 0;
+  bottom: 20%;
   right: 50%;
-  transform: translateX(-50%);
+  transform: translateX(50%);
 }
-.carousel .owl-carousel .owl-dots button {
-  background-color: blue;
+.carousel .owl-carousel .owl-dots span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: white;
 }
 .carousel .img-bg-footer img {
   position: absolute;
@@ -90,9 +153,182 @@
   font-family: "Inter", sans-serif;
 }
 
+.header .container .top-header {
+  background: #000000;
+  height: 50px;
+  align-items: center;
+}
+.header .container .top-header .header-left {
+  margin-left: 24px;
+}
+.header .container .top-header .header-right a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.header .container .top-header .header-right .cart {
+  margin-right: 10px;
+  font-size: 30px;
+  line-height: 36px;
+}
+.header .container .top-header .header-right .login {
+  margin-right: 10px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .top-header .header-right .register-menu {
+  margin-right: 20px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .menu-header {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .container .menu-header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 25px;
+}
+.header .container .menu-header a:hover {
+  color: #000000;
+  opacity: 1;
+}
+.header .container .menu-header a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  background: #000000;
+  border: 1px solid #000000;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+.header .container .top-header {
+  background: #000000;
+  height: 50px;
+  align-items: center;
+}
+.header .container .top-header .header-left {
+  margin-left: 24px;
+}
+.header .container .top-header .header-right a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.header .container .top-header .header-right .cart {
+  margin-right: 10px;
+  font-size: 30px;
+  line-height: 36px;
+}
+.header .container .top-header .header-right .login {
+  margin-right: 10px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .top-header .header-right .register-menu {
+  margin-right: 20px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .container .menu-header {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .container .menu-header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 25px;
+}
+.header .container .menu-header a:hover {
+  color: #000000;
+  opacity: 1;
+}
+.header .container .menu-header a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  background: #000000;
+  border: 1px solid #000000;
+}
+
+.register .container {
+  background: #fffcfc;
+  padding-top: 30px;
+}
+.register .container h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.register .container .row {
+  padding: 62px 90px 85px 120px;
+}
+.register .container .row .col-6 input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  width: 482px;
+  height: 51px;
+  margin-bottom: 27px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid blue;
+}
+.register .container .row .col-6 .select {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.register .container .row .col-6 .select input {
+  margin-left: 30px;
+  width: 62px;
+  height: 50px;
+}
+.register .container .btn {
+  margin-bottom: 40px;
+  margin-left: 700px;
+  width: 291px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fffcfc;
 }
