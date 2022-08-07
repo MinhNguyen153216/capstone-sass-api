@@ -54,7 +54,7 @@
           </div>
         </div>
         <nav class="menu-header">
-          <a href="./register.html">Home</a>
+          <a href="./register.html" type="active">Home</a>
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kid</a>
@@ -66,52 +66,54 @@
       <div class="container">
         <h1>Register</h1>
         <form class="form-group row">
-          <div class="col-6">
-            <div class="mb-3">
+          <div class="col-6 item-left">
+            <div class="mb-3 item-input">
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
                 placeholder="email"
-              />
+              /><span>(*)</span>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 item-input">
               <input
                 type="password"
                 class="form-control"
                 id="password"
                 placeholder="password"
-              />
+              /><span>(*)</span>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 item-input">
               <input
                 type="password"
                 class="form-control"
                 id="passwordConfirm"
                 placeholder="password confirm"
-              />
+              /><span>(*)</span>
             </div>
           </div>
-          <div class="col-6">
-            <div class="mb-3">
+          <div class="col-6 item-right">
+            <div class="mb-3 item-input">
               <input
                 type="text"
                 class="form-control"
                 id="name"
                 placeholder="name"
-              />
+              /><span>(*)</span>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 item-input">
               <input
                 type="text"
                 class="form-control"
                 id="phone"
                 placeholder="phone"
-              />
+              /><span>(*)</span>
             </div>
             <div class="mb-3 select">
               <span>Gender</span>
-              <input name="gender" type="radio" value="true" checked /> Male 
+              <input name="gender" type="radio" value="true" checked /> Male
               <input name="gender" type="radio" value="false" /> Female
             </div>
           </div>
