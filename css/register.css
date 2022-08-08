@@ -77,34 +77,24 @@
   line-height: 48px;
   color: #000000;
 }
-.register .container .row {
+.register .container .form-group {
   padding: 62px 90px 85px 120px;
 }
-.register .container .row .col-6 input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  width: 482px;
-  height: 51px;
-  margin-bottom: 27px;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 5px solid blue;
+.register .container .form-group .item-left .item-input {
+  position: relative;
 }
-.register .container .row .col-6 .select {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  display: flex;
-  align-items: center;
+.register .container .form-group .item-left .item-input span {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.register .container .row .col-6 .select input {
-  margin-left: 30px;
-  width: 62px;
-  height: 50px;
+.register .container .form-group .item-right .item-input {
+  position: relative;
+}
+.register .container .form-group .item-right .item-input span {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .register .container .btn {
   margin-bottom: 40px;

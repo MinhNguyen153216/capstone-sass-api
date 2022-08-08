@@ -13,35 +13,55 @@
       line-height: 48px;
       color: #000000;
     }
-    .row {
+    .form-group{
       padding: 62px 90px 85px 120px;
-      .col-6 {
-      }
-      .col-6 {
-        input{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 36px;
-            width: 482px;
-            height: 51px;
-            margin-bottom: 27px;
-            border: 0;
-            outline: 0;
-            background: transparent;
-            border-bottom: 5px solid blue ;
+      .item-left {
+        .item-input{
+          position: relative;
+          span{
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
         }
-        .select {
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 36px;
-            color: #000000;
-            display: flex;
-            align-items: center;
-          input {
-            margin-left: 30px;
-            width: 62px;
-            height: 50px;
+        // input {
+        //   font-style: normal;
+        //   font-weight: 400;
+        //   font-size: 30px;
+        //   line-height: 36px;
+        //   width: 482px;
+        //   height: 51px;
+        //   margin-bottom: 27px;
+        //   border: 0;
+        //   outline: 0;
+        //   background: transparent;
+        //   border-bottom: 5px solid blue;
+        //   &::after {
+        //     content: "(*)";
+        //     color: red;
+        //   }
+        // }
+        // .select {
+        //   font-weight: 400;
+        //   font-size: 30px;
+        //   line-height: 36px;
+        //   color: #000000;
+        //   display: flex;
+        //   align-items: center;
+        //   input {
+        //     margin-left: 30px;
+        //     width: 62px;
+        //     height: 50px;
+        //   }
+        // }
+      }
+      .item-right{
+        .item-input{
+          position: relative;
+          span{
+            position: absolute;
+            top: 0;
+            right: 0;
           }
         }
       }
