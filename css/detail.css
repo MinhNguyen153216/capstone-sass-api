@@ -5,6 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .header .container .top-header {
   background: #000000;
   height: 50px;
@@ -63,4 +68,8 @@
   width: 60px;
   background: #000000;
   border: 1px solid #000000;
+}
+
+.footer .container {
+  padding: 0;
 }

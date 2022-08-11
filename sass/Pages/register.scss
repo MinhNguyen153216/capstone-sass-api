@@ -1,6 +1,15 @@
 @import "../Base/base";
 @import "../Themes/variables";
 
+
+
+
+
+
+
+
+
+
 .register {
   .container {
     background: #fffcfc;
@@ -13,70 +22,91 @@
       line-height: 48px;
       color: #000000;
     }
-    .form-group{
+    .form-group {
+      position: relative;
       padding: 62px 90px 85px 120px;
       .item-left {
-        .item-input{
+        .item-input {
           position: relative;
-          span{
+          input {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            width: 482px;
+            height: 51px;
+            margin-bottom: 27px;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 5px solid #ae18e2;}
+          span {
             position: absolute;
-            top: 0;
-            right: 0;
-            color: red;
-          }
-        }
-        // input {
-        //   font-style: normal;
-        //   font-weight: 400;
-        //   font-size: 30px;
-        //   line-height: 36px;
-        //   width: 482px;
-        //   height: 51px;
-        //   margin-bottom: 27px;
-        //   border: 0;
-        //   outline: 0;
-        //   background: transparent;
-        //   border-bottom: 5px solid blue;
-        //   &::after {
-        //     content: "(*)";
-        //     color: red;
-        //   }
-        // }
-        // .select {
-        //   font-weight: 400;
-        //   font-size: 30px;
-        //   line-height: 36px;
-        //   color: #000000;
-        //   display: flex;
-        //   align-items: center;
-        //   input {
-        //     margin-left: 30px;
-        //     width: 62px;
-        //     height: 50px;
-        //   }
-        // }
-      }
-      .item-right{
-        .item-input{
-          position: relative;
-          span{
-            position: absolute;
-            top: 0;
-            right: 0;
+            top: 15px;
+            right: 30px;
+            color: rgba(245, 14, 14, 1);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
           }
         }
       }
-    }
-    .btn {
-      margin-bottom: 40px;
-      margin-left: 700px;
-      width: 291px;
-      height: 50px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 36px;
-      color: #fffcfc;
+
+      .item-right {
+        .item-input {
+          position: relative;
+          input {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            width: 482px;
+            height: 51px;
+            margin-bottom: 27px;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 5px solid #ae18e2;}
+          span {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            color: rgba(245, 14, 14, 1);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        .form-control{
+background: transparent;
+outline: 0;
+border: 0;
+span{
+  font-size: 30px;
+  margin-right: 30px;
+}
+      }
+      .btn {
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+        background-color: #ae18e2;
+        margin-bottom: 40px;
+        margin-left: 700px;
+        width: 291px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #fffcfc;
+        border: 1px solid #ae18e2;
+        border-radius: 0;
+        &:hover{
+          background:rgba(174, 24, 226, 0.9);
+        }
+      }
     }
   }
+}
 }
