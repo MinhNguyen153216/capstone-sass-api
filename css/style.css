@@ -5,13 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -41,13 +38,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -57,11 +55,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -75,11 +73,11 @@
 }
 
 .carousel {
-  margin-top: 50px;
+  margin-bottom: 30px;
   position: relative;
 }
 .carousel .owl-carousel .item-carousel {
-  height: 530px;
+  height: 500px;
 }
 .carousel .owl-carousel .item-carousel .container .item-left img {
   display: block;
@@ -143,6 +141,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 393px;
   z-index: -1;
 }
 
@@ -162,13 +161,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -198,13 +194,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -214,11 +211,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -238,13 +235,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -274,13 +268,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -290,11 +285,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -320,26 +315,73 @@
   color: #000000;
 }
 .register .container .form-group {
+  position: relative;
   padding: 62px 90px 85px 120px;
 }
 .register .container .form-group .item-left .item-input {
   position: relative;
 }
+.register .container .form-group .item-left .item-input input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  width: 482px;
+  height: 51px;
+  margin-bottom: 27px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid #ae18e2;
+}
 .register .container .form-group .item-left .item-input span {
   position: absolute;
-  top: 0;
-  right: 0;
-  color: red;
+  top: 15px;
+  right: 30px;
+  color: rgb(245, 14, 14);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 .register .container .form-group .item-right .item-input {
   position: relative;
 }
+.register .container .form-group .item-right .item-input input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  width: 482px;
+  height: 51px;
+  margin-bottom: 27px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid #ae18e2;
+}
 .register .container .form-group .item-right .item-input span {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 30px;
+  color: rgb(245, 14, 14);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
-.register .container .btn {
+.register .container .form-group .item-right .form-control {
+  background: transparent;
+  outline: 0;
+  border: 0;
+}
+.register .container .form-group .item-right .form-control span {
+  font-size: 30px;
+  margin-right: 30px;
+}
+.register .container .form-group .item-right .btn {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  background-color: #ae18e2;
   margin-bottom: 40px;
   margin-left: 700px;
   width: 291px;
@@ -349,4 +391,9 @@
   font-size: 30px;
   line-height: 36px;
   color: #fffcfc;
+  border: 1px solid #ae18e2;
+  border-radius: 0;
+}
+.register .container .form-group .item-right .btn:hover {
+  background: rgba(174, 24, 226, 0.9);
 }
