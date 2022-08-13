@@ -302,98 +302,21 @@
   padding: 0;
 }
 
-.register .container {
-  background: #fffcfc;
-  padding-top: 30px;
+.register .container .content-register {
+  background-color: #f5f5f5;
 }
-.register .container h1 {
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
+.register .container .content-register .detail-register h3 {
+  margin-top: 30px;
 }
-.register .container .form-group {
-  position: relative;
-  padding: 62px 90px 85px 120px;
-}
-.register .container .form-group .item-left .item-input {
-  position: relative;
-}
-.register .container .form-group .item-left .item-input input {
+.register .container .content-register .detail-register form .form-group input {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  width: 482px;
   height: 51px;
   margin-bottom: 27px;
   border: 0;
   outline: 0;
   background: transparent;
   border-bottom: 5px solid #ae18e2;
-}
-.register .container .form-group .item-left .item-input span {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  color: rgb(245, 14, 14);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
-.register .container .form-group .item-right .item-input {
-  position: relative;
-}
-.register .container .form-group .item-right .item-input input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  width: 482px;
-  height: 51px;
-  margin-bottom: 27px;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 5px solid #ae18e2;
-}
-.register .container .form-group .item-right .item-input span {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  color: rgb(245, 14, 14);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
-.register .container .form-group .item-right .form-control {
-  background: transparent;
-  outline: 0;
-  border: 0;
-}
-.register .container .form-group .item-right .form-control span {
-  font-size: 30px;
-  margin-right: 30px;
-}
-.register .container .form-group .item-right .btn {
-  position: absolute;
-  right: 30px;
-  bottom: 0;
-  background-color: #ae18e2;
-  margin-bottom: 40px;
-  margin-left: 700px;
-  width: 291px;
-  height: 50px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  color: #fffcfc;
-  border: 1px solid #ae18e2;
-  border-radius: 0;
-}
-.register .container .form-group .item-right .btn:hover {
-  background: rgba(174, 24, 226, 0.9);
 }
