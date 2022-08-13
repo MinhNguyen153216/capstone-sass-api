@@ -5,13 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -41,13 +38,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -57,11 +55,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -75,11 +73,11 @@
 }
 
 .carousel {
-  margin-top: 50px;
+  margin-bottom: 30px;
   position: relative;
 }
 .carousel .owl-carousel .item-carousel {
-  height: 530px;
+  height: 500px;
 }
 .carousel .owl-carousel .item-carousel .container .item-left img {
   display: block;
@@ -143,6 +141,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 393px;
   z-index: -1;
 }
 
@@ -162,13 +161,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -198,13 +194,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -214,11 +211,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -238,13 +235,10 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header .container .top-header {
+.header {
   background: #000000;
+}
+.header .container .top-header {
   height: 50px;
   align-items: center;
 }
@@ -274,13 +268,14 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .container .menu-header {
+
+.menu-header {
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.header .container .menu-header a {
+.menu-header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -290,11 +285,11 @@
   opacity: 0.7;
   margin-left: 25px;
 }
-.header .container .menu-header a:hover {
+.menu-header a:hover {
   color: #000000;
   opacity: 1;
 }
-.header .container .menu-header a:hover::before {
+.menu-header a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -307,46 +302,21 @@
   padding: 0;
 }
 
-.register .container {
-  background: #fffcfc;
-  padding-top: 30px;
+.register .container .content-register {
+  background-color: #f5f5f5;
 }
-.register .container h1 {
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
+.register .container .content-register .detail-register h3 {
+  margin-top: 30px;
 }
-.register .container .form-group {
-  padding: 62px 90px 85px 120px;
-}
-.register .container .form-group .item-left .item-input {
-  position: relative;
-}
-.register .container .form-group .item-left .item-input span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: red;
-}
-.register .container .form-group .item-right .item-input {
-  position: relative;
-}
-.register .container .form-group .item-right .item-input span {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.register .container .btn {
-  margin-bottom: 40px;
-  margin-left: 700px;
-  width: 291px;
-  height: 50px;
+.register .container .content-register .detail-register form .form-group input {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  color: #fffcfc;
+  height: 51px;
+  margin-bottom: 27px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid #ae18e2;
 }

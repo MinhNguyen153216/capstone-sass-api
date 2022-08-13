@@ -57,138 +57,121 @@
             <a class="register-menu" href="#">Register</a>
           </div>
         </div>
-        <nav class="menu-header">
-          <a href="./register.html" type="active">Home</a>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Kid</a>
-          <a href="#">Sport</a>
-        </nav>
       </div>
     </header>
+    <nav class="menu-header">
+      <div class="container">
+        <a href="./register.html">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kid</a>
+        <a href="#">Sport</a>
+      </div>
+    </nav>
     <section class="register">
       <div class="container">
-        <h1>Register</h1>
-        <form class="form-group">
-          <div class="row">
-            <div class="col-6">
-              <div class="mb-4 item-input">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  required
-                  placeholder="email"
-                /><span>(*)</span>
+        <div class="row content-register">
+          <div class="col-10 mx-auto detail-register">
+            <h3 class="text-center display-6">Register</h3>
+            <form id="formRegister">
+              <div class="row register-item">
+                <div class="col-6 form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email"
+                  />
+                  <span>(*)</span>
+                  <span id="spanEmail" class="text-danger"></span>
+                </div>
+                <div class="col-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="name"
+                  />
+                  <span>(*)</span>
+                  <span id="spanName" class="text-danger"></span>
+                </div>
               </div>
-            </div>
-            <div class="col-6">
-              <div class="mb-4 item-input">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="name"
-                /><span>(*)</span>
+              <div class="row register-item">
+                <div class="col-6 form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="password"
+                  />
+                  <span>(*)</span>
+                  <span id="spanPassword" class="text-danger"></span>
+                </div>
+                <div class="col-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="phone"
+                  />
+                  <span>(*)</span>
+                  <span id="spanPhone" class="text-danger"></span>
+                </div>
               </div>
-            </div>
+              <div class="row register-item">
+                <div class="col-6 form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordConfirm"
+                    placeholder="password confirm"
+                  />
+                  <span>(*)</span>
+                  <span id="spanPasswordConfirm" class="text-danger"></span>
+                </div>
+                <div class="col-6 form-group">
+                  <p style="font-size: 30px; padding-right: 28.54px; display: inline-block;">Gender</p>
+                  <label class="label-title"
+                    >Male
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio"
+                      value="true"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-title"
+                    >Female
+                    <input 
+                    type="radio" 
+                    name="radio" 
+                    value="false" 
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
 
+              <div class="form-group">
+                <div id="btnSubmit">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="mb-4 item-input">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="password"
-                /><span>(*)</span>
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="mb-4 item-input">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="phone"
-                  placeholder="phone"
-                /><span>(*)</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-
-
-            <div class="col-6">
-              <div class="mb-4 item-input">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="passwordConfirm"
-                  placeholder="password confirm"
-                /><span>(*)</span>
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="mb-4 form-control">
-                <span>Gender</span>
-                <input name="gender" type="radio" value="true" checked />
-                <label class="label-title" for="...">Male</label>
-                <input name="gender" type="radio" value="false" />
-                <label class="label-title" for="...">Female</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group text-right">
-            <div id="btnSubmit">
-              <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-
-        </form>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <img src="./img/image 7.png" width="1280px" height="242px" alt="" />
+          <img src="./img/image 7.png" width="1320px" height="242px" alt="" />
         </div>
       </div>
     </footer>
-    <!-- <footer class="footer">
-      <div class="container text-center">
-        <div class="row footer-top">
-          <div class="col border-end">
-            Column
-          </div>
-          <div class="col border-end">
-            Column
-          </div>
-          <div class="col border-end">
-            Column
-          </div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <div class="row footer-bottom">
-          <div class="col border-end">
-            Column
-          </div>
-          <div class="col border-end">
-            Column
-          </div>
-          <div class="col border-end">
-            Column
-          </div>
-        </div>
-      </div>
-    </footer> -->
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
