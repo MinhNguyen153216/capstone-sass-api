@@ -154,3 +154,6 @@
   line-height: 48px;
   color: #000000;
 }
+.product .container .row .item .card {
+  width: 334px;
+}
