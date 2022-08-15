@@ -1,2 +1,5 @@
+import { User } from "./models/User.js";
+
 let user = new User();
-user.email = document.getElementById
+
+console.log(user);

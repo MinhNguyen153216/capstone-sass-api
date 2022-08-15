@@ -5,3 +5,5 @@ function User() {
   this.name = "";
   this.gender = true;
 }
+
+export { User };
