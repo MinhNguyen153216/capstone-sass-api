@@ -169,3 +169,16 @@
 .bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid .clear {
   clear: both;
 }
+
+.product {
+  margin-top: 46px;
+}
+.product .container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.product .container .row .item .card {
+  width: 334px;
+}

@@ -1,3 +1,23 @@
 @import "../Base/base";
 @import "../Themes/variables";
 
+.product {
+  margin-top: 46px;
+  .container {
+    h2 {
+      @include text-config($fw-regular, 40px, 48px, #000000);
+    }
+    .row {
+      .item {
+        .card {
+          width: 334px;
+          // img{
+          //   padding: 45px 57px 30px 57px;
+          //   width: 220px;
+          //   height: 156px;
+          // }
+        }
+      }
+    }
+  }
+}
