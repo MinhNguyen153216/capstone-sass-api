@@ -10,7 +10,11 @@
       height: 500px;
       .container {
         // position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .item-left {
+          width: 75%;
           img {
             display: block;
             height: 392px;
@@ -19,11 +23,17 @@
               height: 280px;
             }
             @media screen and (max-width: 576px) {
-              height: 200px;
+              width: 100%;
+              height: auto;
             }
+          }
+          @media screen and (max-width: 768px) {
+            width: 50%;
+            height: 100%;
           }
         }
         .item-right {
+          width: 25%;
           h1 {
             @include text-config($fw-light, 40px, 48px, #000000);
           }
@@ -40,6 +50,15 @@
             background-color: #f8b653;
             @include text-config($fw-light, 20px, 24px, #ffffff);
           }
+          @media screen and (max-width: 768px) {
+            width: 25%;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          justify-content:space-around;
+        }
+        @media screen and (max-width: 576px) {
+          justify-content: space-around;
         }
       }
       @media screen and (max-width: 768px) {

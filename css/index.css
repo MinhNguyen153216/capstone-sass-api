@@ -177,6 +177,14 @@
 .carousel .owl-carousel .item-carousel {
   height: 500px;
 }
+.carousel .owl-carousel .item-carousel .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .owl-carousel .item-carousel .container .item-left {
+  width: 75%;
+}
 .carousel .owl-carousel .item-carousel .container .item-left img {
   display: block;
   height: 392px;
@@ -189,8 +197,18 @@
 }
 @media screen and (max-width: 576px) {
   .carousel .owl-carousel .item-carousel .container .item-left img {
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
+}
+@media screen and (max-width: 768px) {
+  .carousel .owl-carousel .item-carousel .container .item-left {
+    width: 50%;
+    height: 100%;
+  }
+}
+.carousel .owl-carousel .item-carousel .container .item-right {
+  width: 25%;
 }
 .carousel .owl-carousel .item-carousel .container .item-right h1 {
   font-weight: 300;
@@ -216,6 +234,21 @@
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .carousel .owl-carousel .item-carousel .container .item-right {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .owl-carousel .item-carousel .container {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel .owl-carousel .item-carousel .container {
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel .owl-carousel .item-carousel {
