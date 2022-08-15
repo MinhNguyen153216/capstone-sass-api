@@ -10,4 +10,4 @@ function createUser() {
   var user = new User(email, password, phone, name, gender);
   userList.push(user);
 }
-console.log(gender)
+console.log(user)
