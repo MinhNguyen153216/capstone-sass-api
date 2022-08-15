@@ -15,6 +15,12 @@
             display: block;
             height: 392px;
             width: auto;
+            @media screen and (max-width: 768px) {
+              height: 280px;
+            }
+            @media screen and (max-width: 576px) {
+              height: 200px;
+            }
           }
         }
         .item-right {
@@ -35,6 +41,12 @@
             @include text-config($fw-light, 20px, 24px, #ffffff);
           }
         }
+      }
+      @media screen and (max-width: 768px) {
+        height: 350px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 300px;
       }
     }
     .owl-nav {
