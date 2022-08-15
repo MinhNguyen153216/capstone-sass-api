@@ -68,6 +68,104 @@
   border: 1px solid #000000;
 }
 
-.footer .container {
-  padding: 0;
+.bottom-grids .bottom-top-grids {
+  background: #fafafa;
+  padding: 2em 0;
+}
+.bottom-grids .bottom-top-grids .wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.bottom-grids .bottom-top-grids .wrap .bottom-top-grid {
+  width: 31.2%;
+  margin-right: 2%;
+  float: left;
+  border-right: 1px solid #e2e2e2;
+}
+.bottom-grids .bottom-top-grids .wrap .bottom-top-grid h4 {
+  color: #08080b;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+.bottom-grids .bottom-top-grids .wrap .bottom-top-grid ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.bottom-grids .bottom-top-grids .wrap .bottom-top-grid ul li a {
+  color: #08080b;
+  padding: 0.1em 0;
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.bottom-grids .bottom-top-grids .wrap .last-bottom-top-grid {
+  border: none;
+}
+.bottom-grids .bottom-top-grids .wrap .last-bottom-top-grid p {
+  color: #08080b;
+  display: block;
+  font-size: 0.8em;
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+.bottom-grids .bottom-top-grids .wrap .last-bottom-top-grid a {
+  text-decoration: none;
+}
+.bottom-grids .bottom-top-grids .wrap .last-bottom-top-grid .learn-more {
+  color: #e45d5d;
+  padding: 0.1em 0;
+  display: block;
+  font-size: 0.8em;
+  transition: all 0.3s;
+}
+.bottom-grids .bottom-top-grids .wrap .last-bottom-top-grid .learn-more:hover {
+  color: #000000;
+}
+.bottom-grids .bottom-top-grids .wrap .clear {
+  clear: both;
+}
+.bottom-grids .bottom-bottom-grids {
+  background: #ececec;
+  padding: 2em 0 8em;
+}
+.bottom-grids .bottom-bottom-grids .wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid {
+  width: 31.2%;
+  margin-right: 2%;
+  float: left;
+  border-right: 1px solid #e2e2e2;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid h6 {
+  color: #08080b;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid p {
+  color: #08080b;
+  display: block;
+  font-size: 0.8em;
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid a {
+  text-decoration: none;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid .learn-more {
+  color: #e45d5d;
+  padding: 0.1em 0;
+  display: block;
+  font-size: 0.8em;
+  transition: all 0.3s;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid .learn-more:hover {
+  color: #000000;
+}
+.bottom-grids .bottom-bottom-grids .wrap .bottom-bottom-grid .clear {
+  clear: both;
 }
