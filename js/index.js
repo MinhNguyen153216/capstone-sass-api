@@ -37,7 +37,7 @@ let renderItems = (arrItem) => {
           class="d-flex justify-content-center align-items-center text-center h-100"
         >
           <div class="d-flex justify-content-center align-items-center col h-100" style="background-color:#E1B067">
-            <a href="register.html" class="m-0 text-black" style="font-weight:200; font-size:24px;line-height:29px;text-decoration:none;cursor:pointer">Buy now</a>
+            <a href="./detail.html?productid=${item.id}" class="m-0 text-black" style="font-weight:200; font-size:24px;line-height:29px;text-decoration:none;cursor:pointer">Buy now</a>
           </div>
           <div class="d-flex justify-content-center align-items-center col h-100" style="background-color:#DEDDDC">
             <p class="m-0" style="font-weight:600; font-size:24px;line-height:29px">${item.price}$</p>
