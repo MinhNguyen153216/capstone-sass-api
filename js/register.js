@@ -26,7 +26,7 @@ function createUser() {
     });
 
     promise.catch((err) => {
-      console.log(err);
+      alert("Đăng kí thất bại vì trùng tên đăng nhập");
     });
   }
 }
