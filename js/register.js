@@ -1,29 +1,43 @@
-var userList = [];
+let userList = [];
 
 function createUser() {
+  console.log("create");
   //lấy input
-  var email = document.getElementById("txtEmail").value;
-  var name = document.getElementById("txtName").value;
-  var password = document.getElementById("txtPassword").value;
-  var phone = document.getElementById("txtPhone").value;
-  var gender = document.querySelector('input[name="radio"]:checked').value;
+  let email = document.getElementById("txtEmail").value;
+  let name = document.getElementById("txtName").value;
+  let password = document.getElementById("txtPassword").value;
+  let phone = document.getElementById("txtPhone").value;
+  let gender = document.querySelector('input[name="radio"]:checked').value;
 
   // Gọi tới hàm validation để kiểm tra xem form có hợp lệ hay không
-  var isValid = validation();
+  let isValid = validation();
   if (!isValid) {
     return alert("Vui lòng kiểm tra giá trị của các input");
-  }
+  } else {
+    let newUser = new User(email, name, password, phone, gender);
+    let promise = axios({
+      url: " https://shop.cyberlearn.vn/api/Users/signup",
+      method: "POST",
+      data: newUser,
+    });
 
-  var newUser = new User(email, name, password, phone, gender);
-  userList.push(newUser);
-  console.log(userList);
+    promise.then((result) => {
+      alert("Bạn đăng kí thành công !");
+    });
+
+    promise.catch((err) => {
+      console.log(err);
+    });
+  }
 }
 function validation() {
-  var isValid = document.getElementById("formRegister").checkValidity();
+  let check = true;
+  let isValid = document.getElementById("formRegister").checkValidity();
   if (!isValid) {
+    check = false;
     // DOM tới input txtEmail và kiểm tra hợp lệ
-    var inpEmail = document.getElementById("txtEmail");
-    var spanEmail = document.getElementById("spanEmail");
+    let inpEmail = document.getElementById("txtEmail");
+    let spanEmail = document.getElementById("spanEmail");
     if (inpEmail.validity.valueMissing) {
       // input đang bị lỗi required
       spanEmail.innerHTML = "Email không được để trống";
@@ -33,8 +47,8 @@ function validation() {
     } else {
       spanEmail.innerHTML = "";
     }
-    var inpName = document.getElementById("txtName");
-    var spanName = document.getElementById("spanName");
+    let inpName = document.getElementById("txtName");
+    let spanName = document.getElementById("spanName");
     if (inpName.validity.valueMissing) {
       spanName.innerHTML = "Tên không được để trống";
     } else if (inpName.validity.patternMismatch) {
@@ -42,30 +56,30 @@ function validation() {
     } else {
       spanName.innerHTML = "";
     }
-    var inpPassword = document.getElementById('txtPassword');
-    var spanPassword = document.getElementById('spanPassword');
+    let inpPassword = document.getElementById("txtPassword");
+    let spanPassword = document.getElementById("spanPassword");
     if (inpPassword.validity.valueMissing) {
-      spanPassword.innerHTML = 'Mật khẩu không được để trống';
-    }else{
-      spanPassword.innerHTML=""
+      spanPassword.innerHTML = "Mật khẩu không được để trống";
+    } else {
+      spanPassword.innerHTML = "";
     }
-    var inpPhone = document.getElementById('txtPhone');
-    var spanPhone = document.getElementById('spanPhone');
-    if(inpPhone.validity.valueMissing) {
-      spanPhone.innerHTML = "Số điện thoại không được để trống"
-    }else if(inpPhone.validity.patternMismatch){
-      spanPhone.innerHTML = "Số điện thoại sai định dạng"
-    }else{
+    let inpPhone = document.getElementById("txtPhone");
+    let spanPhone = document.getElementById("spanPhone");
+    if (inpPhone.validity.valueMissing) {
+      spanPhone.innerHTML = "Số điện thoại không được để trống";
+    } else if (inpPhone.validity.patternMismatch) {
+      spanPhone.innerHTML = "Số điện thoại sai định dạng";
+    } else {
       spanPhone.innerHTML = "";
     }
 
-    var inpPasswordConfirm = document.getElementById('passwordConfirm');
-    var spanPasswordConfirm = document.getElementById('spanPasswordConfirm');
+    let inpPasswordConfirm = document.getElementById("passwordConfirm");
+    let spanPasswordConfirm = document.getElementById("spanPasswordConfirm");
     if (inpPasswordConfirm.validity.valueMissing) {
-      spanPasswordConfirm.innerHTML = 'Mật khẩu không được để trống';
-    }else{
-      spanPasswordConfirm.innerHTML="";
+      spanPasswordConfirm.innerHTML = "Mật khẩu không được để trống";
+    } else {
+      spanPasswordConfirm.innerHTML = "";
     }
   }
-
+  return check;
 }
