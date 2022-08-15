@@ -1,9 +1,8 @@
-function User() {
-  this.email = "";
-  this.password = "";
-  this.phone = "";
-  this.name = "";
-  this.gender = true;
+function User(email, name, password, phone, gender) {
+  this.email = email;
+  this.name = name;
+  this.password = password;
+  this.phone = phone;
+  this.gender = gender;
 }
 
-export { User };

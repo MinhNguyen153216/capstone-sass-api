@@ -252,6 +252,10 @@
   line-height: 48px;
   color: #000000;
 }
+.product .container .row .item .card {
+  width: 334px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -646,13 +650,12 @@
   margin-right: 20px;
   cursor: pointer;
   font-size: 30px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .register .container .content-register .detail-register form .register-item .form-group .label-title input {
   position: absolute;
+  top: 0;
+  left: 0;
+  display: inline;
   opacity: 0;
   cursor: pointer;
 }
