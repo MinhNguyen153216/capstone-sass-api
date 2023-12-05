@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Register</title>
+    <title>Login</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -32,7 +32,7 @@
     />
 
     <!-- style -->
-    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <!-- START HEADER -->
@@ -64,17 +64,17 @@
     </nav>
     <!-- END HEADER -->
 
-    <!-- START REGISTER FORM -->
+    <!-- START LOGIN FORM -->
     <section class="register">
       <div class="container">
         <div class="row content-register">
           <div class="col-10 mx-auto detail-register">
-            <h3 class="text-center display-6">Register</h3>
+            <h3 class="text-center display-6">Login</h3>
             <!-- Input form -->
             <form id="formRegister">
               <div class="row register-item">
                 <!-- Email -->
-                <div class="col-lg-6 col-12 form-group">
+                <div class="col-12 form-group">
                   <input
                     type="email"
                     class="form-control"
@@ -86,23 +86,8 @@
                   <span>(*)</span>
                   <p id="spanEmail"></p>
                 </div>
-                <!-- Name -->
-                <div class="col-lg-6 col-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtName"
-                    placeholder="name"
-                    required
-                    pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$"
-                  />
-                  <span>(*)</span>
-                  <p id="spanName"></p>
-                </div>
-              </div>
-              <div class="row register-item">
                 <!-- Password -->
-                <div class="col-lg-6 col-12 form-group">
+                <div class="col-12 form-group">
                   <input
                     type="password"
                     class="form-control"
@@ -113,64 +98,11 @@
                   <span>(*)</span>
                   <p id="spanPassword"></p>
                 </div>
-                <!-- Password confirm -->
-                <div class="col-lg-6 col-12 form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="passwordConfirm"
-                    placeholder="password confirm"
-                    required
-                  />
-                  <span>(*)</span>
-                  <p id="spanPasswordConfirm"></p>
-                </div>
-              </div>
-              <div class="row register-item">
-                <!-- Phone number -->
-                <div class="col-lg-6 col-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtPhone"
-                    placeholder="phone"
-                    required
-                    pattern="[0-9]+"
-                  />
-                  <span>(*)</span>
-                  <p id="spanPhone"></p>
-                </div>
-                <!-- Gender -->
-                <div class="col-lg-6 col-12 form-group form-gender">
-                  <div id="gender-content">
-                    <small style="font-size: 30px; padding-right: 28.54px; display: inline-block">
-                      Gender
-                    </small>
-                    <form>
-                      <label class="label-title"
-                        >Male
-                        <input
-                          id="genderMale"
-                          type="radio"
-                          checked="checked"
-                          name="radio"
-                          value="true"
-                        />
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="label-title"
-                        >Female
-                        <input id="genderFemale" type="radio" name="radio" value="false" />
-                        <span class="checkmark"></span>
-                      </label>
-                    </form>
-                  </div>
-                </div>
               </div>
               <div class="form-group">
                 <!-- Btn Submit -->
                 <div id="btnSubmit">
-                  <button type="button" onclick="submit()" class="btn btn-primary">Submit</button>
+                  <button type="button" onclick="login()" class="btn btn-primary">Submit</button>
                 </div>
               </div>
             </form>
@@ -259,6 +191,6 @@
 
     <!-- script -->
     <script src="./models/User.js"></script>
-    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
